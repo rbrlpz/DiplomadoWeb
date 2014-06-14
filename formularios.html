@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Formularios</title>
+	<style type="text/css">
+	/* Aqui ponemos todos los estilos */
+	</style>
+	<link rel="stylesheet" type="text/css" href="estilos/estilo.css">
 </head>
 <body>
 	<form action="a_donde_quiero_enviar_los_datos.html" method="get">
-		<label for="idnombre">Nombre:</label> 
-			<input id="idnombre" name="nombre" type="text" required /><br />
-		<label for="resp">Respuesta: </label>
-			<input id="resp" name="sino" type="checkbox" /><br />
-		<label for="password">Password:</label> 
-			<input id="password" name="contrasena" type="password" /><br />
-		Sexo: 
-		<input id="sexom" name="sexo" type="radio" value="M" /> 
-		<label for="sexom">Masculino</label>		
-		<input id="sexof" name="sexo" type="radio" value="F" /> 
-		<label for="sexof">Femenino </label><br />
-		<label for="comentarios">Comentarios:</label><textarea id="comentarios" name="comentarios"></textarea>
-		<select name="intereses">
+		<p>
+			<label class="rojo" for="idnombre">Nombre:</label> 
+			<input class="derecha" id="idnombre" name="nombre" type="text" required />
+		</p>
+		<p>
+			<label for="resp">Respuesta: </label>
+			<input class="derecha" id="resp" name="sino" type="checkbox" />
+		</p>
+		<p>
+			<label class="rojo" for="password">Password:</label> 
+			<input id="password" name="contrasena" type="password" />
+		</p>
+		<p>
+			Sexo: 
+			<input class="derecha" id="sexom" name="sexo" type="radio" value="M" /> 
+			<label for="sexom">Masculino</label>		
+			<input class="derecha" id="sexof" name="sexo" type="radio" value="F" /> 
+			<label for="sexof">Femenino </label>
+		</p>
+		<p>
+			<label class="derecha" for="comentarios">Comentarios:</label><textarea id="comentarios" name="comentarios"></textarea>
+		</p>
+		<select class="derecha"  name="intereses">
 			<option value="1">opción 1</option>
 			<option value="2">opción 2</option>
 			<option value="3">opción 3</option>

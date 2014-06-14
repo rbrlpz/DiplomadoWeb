@@ -1,0 +1,12 @@
+h1,h2,h3 {
+	color: red;
+}
+
+h1{
+	font-family: Arial;
+}
+
+p#parrafito strong{
+	color:green;
+
+}

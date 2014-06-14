@@ -1,0 +1,37 @@
+/* 
+	Formas para definir un estilo para html
+
+	etiqueta{
+		propiedad: valor;
+		propiedad: valor;
+	}
+
+	#id{
+		propiedad: valor;
+		propiedad: valor;
+	}
+
+	.clase{
+		propiedad: valor;
+		propiedad: valor;
+	}
+*/
+body{
+	background: rgb(187, 211, 187);
+	color:#666666;
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 16px;
+}
+
+label{
+	color:#0000ff;
+	display: inline-block;
+	float:left;
+	font-weight: bold;
+	text-align: right;
+	width: 200px;
+}
+
+.derecha{
+	width: 300px;
+}
