@@ -23,10 +23,32 @@
 			<tr><th>Encabezado 1</th><th>Encabezado 2</th></tr>
 		</thead>
 		<tbody>
-			<tr><td>Datos 1</td><td>Datos 2</td></tr>
-			<tr><td>Datos 3</td><td>Datos 4</td></tr>
-			<tr><td>Datos 5</td><td>Datos 6</td></tr>
+			<tr>
+				<td>Datos 1</td>
+				<td>Datos 2</td>
+				<td rowspan="2">Datos 2</td>
+			</tr>
+			<tr>
+				<td>Datos 3</td>
+				<td>Datos 4</td>
+			</tr>
+			<tr>
+				<td>Datos 5</td>
+				<td>Datos 6</td>
+				<td>Datos 2</td>
+			</tr>
+			<tr>
+				<td colspan="2"> Dos celdas unidas</td>
+				<td>Datos 2</td>
+			</tr>
 		</tbody>
 	</table>
+	<div>Aquí tenemos una capa</div>
+	<span>Yo también puedo ser una capa</span>
+
+	<p>
+		Lorem ipsum dolor <div>sit </div>amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et <span>dolore</span> magna aliqua. Ut enim ad minim veniam
+	</p>
 </body>
 </html>
