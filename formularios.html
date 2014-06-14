@@ -4,6 +4,24 @@
 	<title>Formularios</title>
 </head>
 <body>
+	<form action="a_donde_quiero_enviar_los_datos.html" method="post">
+		<label for="idnombre">Nombre:</label> 
+			<input id="idnombre" name="nombre" type="text" /><br />
+		<label for="resp">Respuesta: </label>
+			<input id="resp" name="sino" type="checkbox" /><br />
+		<label for="password">Password:</label> 
+			<input id="password" name="contrasena" type="password" /><br />
+		Sexo: 
+		<input id="sexom" name="sexo" type="radio" value="M" /> 
+		<label for="sexom">Masculino</label>		
+		<input id="sexof" name="sexo" type="radio" value="F" /> 
+		<label for="sexof">Femenino </label><br />
+		<label for="comentarios">Comentarios:</label><textarea id="comentarios" name="comentarios"></textarea>
+<hr />
+	<input type="button" value="Boton que no hace nada"/>
+	<input type="reset" value="Borra todo el formulario"/>
+	<input type="submit" value="Envía los datos"/>
 
+	</form>
 </body>
 </html>
