@@ -4,9 +4,9 @@
 	<title>Formularios</title>
 </head>
 <body>
-	<form action="a_donde_quiero_enviar_los_datos.html" method="post">
+	<form action="a_donde_quiero_enviar_los_datos.html" method="get">
 		<label for="idnombre">Nombre:</label> 
-			<input id="idnombre" name="nombre" type="text" /><br />
+			<input id="idnombre" name="nombre" type="text" required /><br />
 		<label for="resp">Respuesta: </label>
 			<input id="resp" name="sino" type="checkbox" /><br />
 		<label for="password">Password:</label> 
@@ -17,11 +17,31 @@
 		<input id="sexof" name="sexo" type="radio" value="F" /> 
 		<label for="sexof">Femenino </label><br />
 		<label for="comentarios">Comentarios:</label><textarea id="comentarios" name="comentarios"></textarea>
+		<select name="intereses">
+			<option value="1">opción 1</option>
+			<option value="2">opción 2</option>
+			<option value="3">opción 3</option>
+			<option value="4">opción 4</option>
+		</select>
 <hr />
 	<input type="button" value="Boton que no hace nada"/>
 	<input type="reset" value="Borra todo el formulario"/>
 	<input type="submit" value="Envía los datos"/>
+<hr />
+		<input type="url"  />
+		<!-- 
+		tipos de etiquetas para navegación móvil
+			name: pone con mayúscula la primer letra de cada palabra
+			email: agrega al teclado movil la tecla @ y una tecla .com
+			url: agrega al teclado una tecla .com
 
+			color: permite seleccionar visualmente un color
+			date: muestra un calendario para seleccionar una fecha
+			time: muestra automáticamente el formato para la hora
+
+			range: muestra una barra de desplazamiento para selecionar un valor numérico.
+			number: muestra un spinner numérico
+		-->
 	</form>
 </body>
 </html>
