@@ -1,7 +1,14 @@
+body{
+	background: #e8e8e8;
+	color: #444;
+	font-size: 16px;
+}
 header{
 	background: #444;
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 	color:white;
+	position: relative;
+	z-index: 10;
 }
 
 header .avatar{
@@ -72,4 +79,62 @@ header .titulo p{
 	font-size: 14px;
 	font-style: italic;
 	font-weight: bold;
+}
+
+nav{
+	background: #22bce0;
+	border-left: 10px solid #ffffff;
+}
+
+nav .menu{
+	height: 50px;
+	line-height: 50px;
+	margin:0;
+	padding: 0;
+}
+
+nav .menu li{
+	display: inline-block;
+}
+
+nav .menu li a{
+	color: #ffffff;
+	display: block;
+	margin: 0 0.5em;
+	/* 
+		margin-top:0;
+		margin-bottom:0;
+		margin-left:0.5em;
+		margin-right:0.5em;
+	*/
+	padding:0 0.2em;
+	text-decoration: none;
+}
+
+nav .menu li a:hover{
+	background: rgba(0,0,0,0.1);
+}
+
+.posts{
+	padding: 0.5em;
+}
+
+.posts .post{
+	background: #ffffff;
+	border-radius: 0 0 0.5em 0.5em;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	margin-bottom: 0.5em;
+}
+
+.posts .post .detalles{
+	height: 128px;
+	margin-left: 6.25em;
+}
+
+.posts .post .generales .imagen {
+	float:left;
+}
+
+.posts .post .generales .imagen img{
+	width:95px; 
 }
