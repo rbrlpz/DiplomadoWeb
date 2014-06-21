@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'iconitos';
+	src:url('fonts/icomoon.eot?-t3mdwj');
+	src:url('fonts/icomoon.eot?#iefix-t3mdwj') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-t3mdwj') format('woff'),
+		url('fonts/icomoon.ttf?-t3mdwj') format('truetype'),
+		url('fonts/icomoon.svg?-t3mdwj#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
 	background: #e8e8e8;
 	color: #444;
@@ -37,6 +48,11 @@ header .avatar .flechita{
 	width: 20px;
 }
 
+header .avatar .flechita:before{
+	font-family: "iconitos";
+	content:"\e602";
+}
+
 header .avatar .publicar{
 	background: #dd4f24;
 	display: inline-block;
@@ -47,7 +63,12 @@ header .avatar .publicar{
 	text-align: center;
 	text-decoration: none;
 	top: 30px;
-	width: 60px;
+	width: 80px;
+}
+
+header .avatar .publicar:before{
+	font-family: "iconitos";
+	content: "\e600";
 }
 
 header .logo{
@@ -64,7 +85,7 @@ header .logo img{
 
 header .titulo{
 	display: inline-block;
-	margin-left: 15px;
+	margin-left: 14px;
 
 }
 
@@ -95,11 +116,27 @@ nav{
 	border-left: 10px solid #ffffff;
 }
 
+nav:before{
+	border-bottom: 25px solid transparent;
+	border-left: 10px solid #ffffff;
+	border-top: 25px solid transparent;
+	content:"";
+	left:10px;
+	position: absolute;
+}
+
 nav .menu{
 	height: 50px;
 	line-height: 50px;
 	margin:0;
 	padding: 0;
+	overflow-x:auto; 
+	white-space: nowrap;
+}
+
+
+nav .menu::-webkit-scrollbar{
+	display: none;
 }
 
 nav .menu li{
@@ -158,6 +195,10 @@ nav .menu li a:hover{
 	text-decoration: none;
 }
 
+.posts .post .acciones .comenfavs .favoritos:before{
+	font-family: "iconitos";
+	content: "\e601";
+}
 .posts .post .acciones .votos{
 	float:left;
 	margin-left: 0.5em;
@@ -169,16 +210,23 @@ nav .menu li a:hover{
 
 .posts .post .acciones .likes, .posts .post .acciones .nolikes{
 	text-decoration: none;
+	font-family: "iconitos";
 }
 
 .posts .post .acciones .likes{
 	color:green;
 }
 
+.posts .post .acciones .likes:before{
+	content:"\e603";
+}
+
 .posts .post .acciones .nolikes{
 	color:red;
 }
-
+.posts .post .acciones .nolikes:before{
+	content:"\e602";
+}
 .posts .post .detalles{
 	height: 128px;
 	margin-left: 6.25em;
@@ -187,6 +235,10 @@ nav .menu li a:hover{
 
 .posts .post .detalles .autor{
 	margin:0;
+}
+
+.posts .post .detalles .autor a{
+	color: #dd4f24;
 }
 
 .posts .post .detalles .fecha{
@@ -204,11 +256,8 @@ nav .menu li a:hover{
 
 }
 
-.posts .post .detalles .autor a{
-	color: #dd4f24;
-}
 .posts .post .detalles .titulo{
-	font-size: 1.1em;
+	font-size: .9em;
 	font-style: italic;
 	margin-bottom: 0.5em;
 }
@@ -219,4 +268,13 @@ nav .menu li a:hover{
 
 .posts .post .generales .imagen img{
 	width:95px; 
+}
+
+@media screen and (max-width: 500px){
+	header .titulo {
+		height: 80px;
+	}
+	header .titulo h1{
+		display: none;
+	}
 }
