@@ -46,7 +46,7 @@ header .avatar .publicar{
 	right: 80px;
 	text-align: center;
 	text-decoration: none;
-	top: 10px;
+	top: 30px;
 	width: 60px;
 }
 
@@ -70,7 +70,7 @@ header .titulo{
 
 header .titulo h1{
 	font-family: Arial;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: normal;
 }
 
@@ -83,10 +83,11 @@ header .titulo p{
 
 footer {
 	background: #dd4f24;
-	color: white;
+	color: rgba(255,255,255,0.7);
 	height: 6em;
 	padding-top: 3em;
 	text-align: center;
+	font-size: 0.8em;
 }
 
 nav{
@@ -207,7 +208,7 @@ nav .menu li a:hover{
 	color: #dd4f24;
 }
 .posts .post .detalles .titulo{
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-style: italic;
 	margin-bottom: 0.5em;
 }
