@@ -81,6 +81,14 @@ header .titulo p{
 	font-weight: bold;
 }
 
+footer {
+	background: #dd4f24;
+	color: white;
+	height: 6em;
+	padding-top: 3em;
+	text-align: center;
+}
+
 nav{
 	background: #22bce0;
 	border-left: 10px solid #ffffff;
@@ -126,9 +134,82 @@ nav .menu li a:hover{
 	margin-bottom: 0.5em;
 }
 
+.posts .post .acciones{
+	border-top:3px solid #22bce0;
+	height: 2.5em;
+}
+
+.posts .post .acciones .comenfavs{
+	float:right;
+	line-height: 3em;
+	margin-right: 0.5em;
+}
+
+.posts .post .acciones .comenfavs .comentarios{
+	background: #444444;
+	border-radius: 3px;
+	color:white;
+	text-decoration: none;
+}
+
+.posts .post .acciones .comenfavs .favoritos{
+	color:#fcb92d;
+	text-decoration: none;
+}
+
+.posts .post .acciones .votos{
+	float:left;
+	margin-left: 0.5em;
+}
+
+.posts .post .acciones .votos p{
+	display: inline-block;
+}
+
+.posts .post .acciones .likes, .posts .post .acciones .nolikes{
+	text-decoration: none;
+}
+
+.posts .post .acciones .likes{
+	color:green;
+}
+
+.posts .post .acciones .nolikes{
+	color:red;
+}
+
 .posts .post .detalles{
 	height: 128px;
 	margin-left: 6.25em;
+}
+
+
+.posts .post .detalles .autor{
+	margin:0;
+}
+
+.posts .post .detalles .fecha{
+	float: right;
+	margin-right: 1em;
+}
+
+.posts .post .detalles .tags{
+	background:  #22bce0;
+	border-radius: 0.5em;
+	color:#ffffff;
+	display: inline-block;
+	margin-top: 1em;
+	padding: 0.2em 0.5em;
+
+}
+
+.posts .post .detalles .autor a{
+	color: #dd4f24;
+}
+.posts .post .detalles .titulo{
+	font-size: 1.3em;
+	font-style: italic;
+	margin-bottom: 0.5em;
 }
 
 .posts .post .generales .imagen {
